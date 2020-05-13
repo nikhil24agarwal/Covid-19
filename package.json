@@ -17,8 +17,10 @@
   },
   "homepage": "https://github.com/nikhil24agarwal/Covid-19#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "cheerio": "^1.0.0-rc.3",
     "express": "^4.17.1",
+    "fs": "0.0.1-security",
     "request": "^2.88.2",
     "xlsx": "^0.16.0"
   }
