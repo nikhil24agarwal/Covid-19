@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        body{
+            margin: 50% 50%;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
+
 <body>
-    <h1><%= stotal %></h1>
-    <h1><%= scured %></h1>
-    <h1><%= sdeaths %></h1>
+    <h1>Active cases:<%= stotal %></h1>
+    <h1>Cured cases<%= scured %></h1>
+    <h1>Deaths<%= sdeaths %></h1>
 </body>
 </html>

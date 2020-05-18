@@ -2,10 +2,11 @@ const request=require("request");
 const cheerio=require("cheerio");
 const express=require("express");
 const bodyParser=require("body-parser");
-const fs = require("fs");
+const fs = require("fs");  // not used
 
 var port=3000;
 const app=express();
+app.use(express.static("public"));
 app.set("view engine","ejs");       
 
 app.use(bodyParser.urlencoded({extended:true}));
@@ -166,7 +167,7 @@ app.post("/",function(req,res){
                scured=daataa[65];
                sdeaths=daataa[66];
                break;        
-               case "mizoram":
+            case "mizoram":
                 stotal=daataa[67];
                 scured=daataa[68];
                 sdeaths=daataa[69];
