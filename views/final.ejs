@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <style>
-        body{
-            margin: 50% 50%;
+        .f{
+            margin-top: 500px;
+            margin-left: 500px;
         }
     </style>
     <meta charset="UTF-8">
@@ -12,9 +13,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 
-<body>
-    <h1>Active cases:<%= stotal %></h1>
-    <h1>Cured cases<%= scured %></h1>
-    <h1>Deaths<%= sdeaths %></h1>
+<body style="background-color: #f7f7f7;">
+    <div class="f">
+    <h1>Active cases : <%= stotal %></h1>
+    <h1>Cured cases : <%= scured %></h1>
+    <h1>Deaths : <%= sdeaths %></h1>
+</div>
 </body>
 </html>

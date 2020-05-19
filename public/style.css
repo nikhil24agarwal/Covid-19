@@ -18,8 +18,9 @@
     display: inline-block;
     border-radius: 10px;
     background: linear-gradient(to bottom, #a5c9fd 0%, #a5c9fd 6%, #a7cbff 8%, #a5c9fd 11%, #a7cbff 11%, #aacffc 28%, #b0d5ff 44%, #b0d6fb 48%, #b5dbff 62%, #b4dbfc 62%, #b8dffe 75%, #bae2fb 79%, #bce4fe 91%, #bde6fa 96%, #bee7fd 100%);
-   text-align: center;
+    border-radius: 10px;
     margin: 70px 100px 70px 200px;
+    text-align: center;
 
 
 
@@ -52,7 +53,7 @@
 
 .in{
     
-    margin-top: 50px;
+    margin-top: 10px;
     margin-left: 600px;
     border-radius: 5px;
     height: 50px;
@@ -61,4 +62,19 @@
 .b{
     margin-top: 50px;
     margin-left: 650px;
+}
+.total{
+    height: 200px;
+    border-radius: 10px;
+    border-radius: 10px;
+    width: 200px;
+    background: linear-gradient(to bottom, #f5ce67 0%, #f8cd67 4%, #f6cc66 7%, #f7cb6c 13%, #f5c66c 21%, #f8c76b 23%, #f7c570 27%, #f7c36f 33%, #f9c174 39%, #f8bf72 40%, #f9ba73 47%, #f9ba77 52%, #fdb877 56%, #fab677 57%, #f9b479 60%, #fab17c 67%, #fcb17a 69%, #fbaf7e 74%, #fcab7c 77%, #fcab7e 84%, #fdaa82 85%, #fca683 100%);
+   text-align: center;
+   margin-top: 50px;
+   margin-bottom: 50px;
+   margin-left: 600px;
+
+}
+.head{
+    margin-left: 450px;
 }

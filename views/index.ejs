@@ -10,6 +10,10 @@
 </head>
 <body style="background-color: #f7f7f7;">
     <h1 class="title">Covid-19</h1>
+    <div class="total">
+        <h1>Total cases:</h1><br>
+        <b> <%= total  %></b>
+    </div>
     <div class="boxx">
         <div class="blue">
             <h1>Active cases </h1><br>
@@ -36,6 +40,7 @@
     <h1>Cured/Dischared  : <%= cured  %></h1>
     <h1>Deaths: <%= death %></h1> -->
     <form action="/" method="post">
+        <h1 class="head">To check cases statewise</h1>
         <input type="text" name="statename" class="in" placeholder="statename">
         <br>
         <button type="submit" class="btn btn-dark b">GO</button>
