@@ -27,13 +27,13 @@ var sdeaths=0;
 request("https://www.mohfw.gov.in/" , (error,response,html) => {
     if(!error && response.statusCode ==200){
         const $=cheerio.load(html);
-         total=$('#state-data > div > div > div > div > table > tbody > tr:nth-child(35) > td:nth-child(2) > strong').text();
+         total=$('#state-data > div > div > div > div > table > tbody > tr:nth-child(37) > td:nth-child(6) > strong').text();
         active=$('#site-dashboard > div > div > div > div > ul > li.bg-blue > strong').text();
          cured=$('#site-dashboard > div > div > div > div > ul > li.bg-green > strong').text();
         death=$('#site-dashboard > div > div > div > div > ul > li.bg-red > strong').text();
         console.log(death);
         
-        for(var i=1;i<34;i++){
+        for(var i=1;i<36;i++){
             daataa.push($("#state-data > div > div > div > div > table > tbody > tr:nth-child(" + i + ") > td:nth-child(3)").text());
             daataa.push($("#state-data > div > div > div > div > table > tbody > tr:nth-child(" + i + ") > td:nth-child(3)").next().text());
             daataa.push($("#state-data > div > div > div > div > table > tbody > tr:nth-child(" + i + ") > td:nth-child(3)").next().next().text());
@@ -172,57 +172,69 @@ app.post("/",function(req,res){
                 scured=daataa[68];
                 sdeaths=daataa[69];
                 break;
-           case "odisha":
+           case "nagaland":
                stotal=daataa[70];
                scured=daataa[71];
                sdeaths=daataa[72];
                break;
-           case "puducherry":
+           case "odisha":
                stotal=daataa[73];
                scured=daataa[74];
                sdeaths=daataa[75];
                break;
-           case "punjab":
+           case "puducherry":
                stotal=daataa[76];
                scured=daataa[77];
                sdeaths=daataa[78];
                break;        
-           case "rajasthan":
+           case "punjab":
                stotal=daataa[79];
                scured=daataa[80];
                sdeaths=daataa[81];
                break;        
-           case "tamil nadu":
+           case "rajasthan":
                stotal=daataa[82];
                scured=daataa[83];
                sdeaths=daataa[84];
                break;        
-           case "telengana":
+           case "sikkim":
                stotal=daataa[85];
                scured=daataa[86];
                sdeaths=daataa[87];
                break;       
-            case "tripura":
+            case "tamil nadu":
                stotal=daataa[88];
                scured=daataa[89];
                sdeaths=daataa[90];
                break;        
-           case "uttarakhand":
+           case "telengana":
                stotal=daataa[91];
                scured=daataa[92];
                sdeaths=daataa[93];
                break;        
-           case "uttar pradesh":
+           case "tripura":
                stotal=daataa[94];
                scured=daataa[95];
                sdeaths=daataa[96];
                break;        
-           case "west bengal":
+           case "uttarakhand":
                stotal=daataa[97];
                scured=daataa[98];
                sdeaths=daataa[99];
                break;    
-                }
+                
+            case "uttar pradesh":
+                stotal=daataa[100];
+                scured=daataa[101];
+                sdeaths=daataa[102];
+                break;    
+                
+            case "west bengal":
+                stotal=daataa[103];
+                scured=daataa[104];
+                sdeaths=daataa[105];
+                break;    
+                    }
      res.redirect("/final")
 })
 app.get("/final",function(req,res){
